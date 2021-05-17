@@ -1,0 +1,30 @@
+ factorial value of a given number
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int find(int n)
+{
+
+if(n==1)
+	return 1;
+if(n>0)
+	return(n*find(n-1));
+}
+
+
+int main() 
+{
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	int n;
+	cin>>n;
+	
+	int fact=find(n);
+	cout<<fact<<"\n";	
+	}
+	
+return 0;
+}
